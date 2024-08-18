@@ -13,7 +13,7 @@ header {
     min-height: 90px;
     justify-content: space-between;
     vertical-align: middle;
-    box-shadow: 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px rgba(0, 0, 0, 0.2);
     z-index: 2;
 }
 
@@ -68,7 +68,7 @@ div p {
     font-size: 2vw;
     font-weight: 600;
     color: white;
-    text-shadow: 0px 3px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 2px rgba(0, 0, 0, 0.2);
 }
 
 hr {
@@ -103,7 +103,7 @@ hr {
 }
 
 img {
-    filter: drop-shadow(0px 10px rgb(0, 0, 0, 0.1));
+    filter: drop-shadow(0px 10px rgb(0, 0, 0, 0.2));
 }
 
 button {
@@ -117,9 +117,10 @@ button {
     border-radius: 10px;
     padding: 15px;
     transition-duration: 0.1s;
-    filter: drop-shadow(0px 5px rgb(0, 0, 0, 0.1));
+    filter: drop-shadow(0px 5px rgb(0, 0, 0, 0.2));
     width: 150px;
     margin: 20px;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
