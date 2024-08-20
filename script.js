@@ -1,15 +1,15 @@
 window.onload = function () {
-    window.onscroll = function() {myFunction()};
+    window.onscroll = function() {scroll()};
 
-    var header = document.getElementById("myHeader");
+    var header = document.getElementById("sticky-header");
     var sticky = header.offsetTop;
 
-    function myFunction() {
-        console.log("YH");
-    if (window.scrollY > sticky) {
-        header.classList.add("sticky");
-    } else {
-        header.classList.remove("sticky");
+    function scroll() {
+        if (window.scrollY > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
     }
-    }
+
 }

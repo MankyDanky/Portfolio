@@ -57,7 +57,7 @@ div {
 }
 div h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 40pt;
+    font-size: 5vw;
     font-weight: 800;
     color: white;
 }
@@ -124,16 +124,15 @@ img {
 article {
     max-width: 80%;
     margin: auto;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 article div {
-    margin-top: 20px;
     display:inline-block;
     vertical-align: top;
     text-align: left;
-    margin-left: 4vw;
+    margin-left: 3vw;
     width: 40%;
 }
 
@@ -146,6 +145,44 @@ article div h1 {
 article div p {
     margin-left: 0;
     margin-right: 0;
+}
+
+.project-icon-container {
+    margin: none;
+    padding: none;
+    width: 50%;
+    position: relative;
+    text-align: center;
+    
+}
+
+.project-icon-container img {
+    width: 100%;
+    transition-duration: 0.3s;
+}
+
+.project-icon-container span {
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5vw;
+    text-shadow: 0px 2px rgba(0, 0, 0, 0.4);
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition-duration: 0.3s;
+
+}
+
+.project-icon-container:hover img {
+    filter: drop-shadow(0px 10px rgb(0, 0, 0, 0.4)) brightness(50%) blur(1px);
+}
+
+.project-icon-container:hover span {
+    opacity: 1;
 }
 
 button {

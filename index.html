@@ -6,51 +6,64 @@
         <script src="https://kit.fontawesome.com/1ab8f48e0a.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header id="myHeader">
+        <header id="sticky-header">
             <span>Aadi Kulshrestha</span>
             <a href="#contact">Contact</a>
             <a href="#projects">Projects</a>
-            <a class="active" href="#about">About</a>
+            <a href="#about">About</a>
         </header>
         <div class = content>
-            <h1>About Me</h1>
+            <h1 id="about">About Me</h1>
             <div class="image-paragraph-container">
                 <img src="images/IMG_0223.JPG"/>
                 <p>I'm a passionate and highly driven programmer that aims to make a mark on the world. I currently attend the University of Waterloo for computer science, and love to create fun side projects in my free time. Feel free to check them out below and get in contact with me if you have any questions. </p>
             </div>
             <hr>
-            <h1>Projects</h1>
-            <article class="project-container">
-                <img src="images/NYTPuzzleWordFinderScreenshot.png" width="50%"/>
+            <h1 id="projects">Projects</h1>
+
+            <article class="project-container" href="https://github.com/MankyDanky/NYT-Puzzle-Game-Word-Finder">
+                <a href="https://github.com/MankyDanky/NYT-Puzzle-Game-Word-Finder">
+                    <div width="60%%" class="project-icon-container">
+                        <img src="images/NYTPuzzleWordFinderScreenshot.png"/>
+                        <span>Go To Repo →</span>
+                    </div>
+                </a>
                 <div>
                     <h1>NYT Puzzle Word Finder</h1>
                     <span class="project-tag">C++</span>
                     <p>A program to help you find words to solve the daily NYT puzzles</p>
                 </div>
             </article>
+            
             <article class="project-container">
-                <img src="images/PhotoEditorScreenshot.png" width="50%"/>
+                <a href="https://github.com/MankyDanky/PhotoEditor">
+                    <div width="60%%" class="project-icon-container">
+                        <img src="images/PhotoEditorScreenshot.png"/>
+                        <span>Go To Repo →</span>
+                    </div>
+                </a>
                 <div>
                     <h1>Photo Editor</h1>
                     <span class="project-tag">C++</span>
                     <p>A program to apply various filters to an imported image and export the edited photo.</p>
                 </div>
             </article>
+            
             <hr>
-            <h1>Contact Me</h1>
-            <button id="email-button">
+            <h1 id="contact">Contact Me</h1>
+            <button id="email-button" onclick="window.location.href='mailto:aadi.kulsh@gmail.com';">
                 <i class="fa-solid fa-envelope"></i>
                 Email
             </button>
-            <button id="linkedin-button">
+            <button id="linkedin-button" onclick="window.location.href='https://www.linkedin.com/in/aadi-kulsh-98348b29b/';">
                 <i class="fa-brands fa-linkedin"></i>
                 LinkedIn
             </button>
-            <button id="github-button">
+            <button id="github-button" onclick="window.location.href='https://github.com/MankyDanky';">
                 <i class="fa-brands fa-github"></i>
                 GitHub
             </button>
-            <button id="twitter-button">
+            <button id="twitter-button" onclick="window.location.href='https://x.com/MankyDankyBanky';">
                 <i class="fa-brands fa-x-twitter"></i>
                 X
             </button>
